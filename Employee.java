@@ -36,8 +36,8 @@ public class Employee {
 			
 
 			con = DriverManager.getConnection(
-					"jdbc:oracle:thin:@is-zinvdbqat2:1521:TESTZ", "TRAIN4",
-					"phou6rle23");
+					"url", "username",
+					"password");
 
 			
 
