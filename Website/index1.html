@@ -1,0 +1,105 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<script>
+	function visible() {
+	if(document.getElementById("login-form").style.visibility == "hidden" ) {
+    document.getElementById("login-form").style.visibility = "visible";
+}
+else {
+document.getElementById("login-form").style.visibility = "hidden";
+}
+	}
+	function visible1() {
+	if(document.getElementById("login-form1").style.visibility == "hidden" ) {
+    document.getElementById("login-form1").style.visibility = "visible";
+}
+else {
+document.getElementById("login-form1").style.visibility = "hidden";
+}
+	}
+	</script>
+</head>
+<body>
+<div class="hdr">
+ <header>
+
+ 	<div id = "mar">
+	<p><button onclick="www.google.com" size ="10"  ><font size="5" face="Verdana">About US!</font></button><span class = "head"><b>EMPLOYEE MANAGEMENT SYSTEM</b></span></p>
+	
+	</div>
+	
+<!--	<font size="6" face="Verdana"><b>Company name</b></font>-->
+</header>
+</div>
+<div class="image">
+<img src="main_page.jpg">
+</div>
+<div class="container">
+<br><br>
+<div id="po">
+<button class = "search" onclick="visible()" style="background-color:#85ADFF"><img src="pro.jpg" height=60 width=50><figcaption><b>&nbspEmployee&nbsp</b></figcapion></img></button></div>
+  <div id="login-form">
+
+    <h3>User Login</h3>
+
+    <fieldset>
+
+      <form action="check.php" method="post">
+	  
+
+        <input type="text" required name="emp_id" value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> 
+        <input type="password" required name="pass" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> 
+        <input type="submit" name="submit" value="Login">
+
+        <footer class="clearfix">
+
+          <p><a href="reg_main.html">register here</a></p>
+
+        </footer>
+
+      </form>
+
+    </fieldset>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="container1">
+<br><br>
+<button onclick="visible1()" style="background-color:#85ADFF"><img src="pro.jpg" height=60 width=50><figcaption><b>&nbsp&nbsp&nbsp&nbspAdmin&nbsp&nbsp&nbsp&nbsp</b></figcaption></img></button>
+  <div id="login-form1">
+
+    <h3>Admin Login</h3>
+
+    <fieldset>
+
+      <form action="check2.php" method="post">
+	  
+
+        <input type="text" required name="admin_id" value="text" onBlur="if(this.value=='')this.value='admin_id'" onFocus="if(this.value=='Email')this.value='' "> 
+        <input type="password" required name="pass" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> 
+        <input type="submit" value="Login">
+
+        <footer>
+
+          <p><a href="reg_main.html" style="color:white">register here</a></p>
+
+        </footer>
+
+      </form>
+
+    </fieldset>
+
+  </div>
+
+</div></body>
+</html>

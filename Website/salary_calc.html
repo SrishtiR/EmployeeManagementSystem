@@ -1,0 +1,163 @@
+<html>
+<head>
+<script>
+function cal1()
+{
+$x=document.getElementById('over').value;
+$y=document.getElementById('leaves').value;
+$x1=300*$x;
+$y1=150*$y;
+$temp1=65000+3000+$x1;
+$temp2=800+250+$y1;
+$total=$temp1-$temp2;
+alert('total salary is '+$total);
+}
+
+
+function cal2()
+{
+$a=document.getElementById('').value;
+$b=document.getElementById('').value;
+$a1=300*$a;
+$b1=150*$b;
+$abc=4500+200+$a1;
+$abc1=500+200+$b1;
+$tot=$abc-$abc1;
+alert('total salary is '+$tot);
+}
+
+function change(x)
+{
+x.style.backgroundColor="gray";
+}
+
+
+function change1(x)
+{
+x.style.backgroundColor="transparent";
+}
+
+
+function fun(x)
+{
+if(x=="CEO"||x=="COO"||x=="GM"||x=="MANAGER")
+     {    fun1(); 
+	 }
+
+else 
+   {
+     fun2();
+   }
+}
+
+function fun1()
+{
+document.getElementById('div2').style.display='none';
+document.getElementById('div1').style.display='block';
+}
+
+
+function fun2()
+{
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='block';
+
+}
+</script>
+</head>
+
+
+<body align="center" bgcolor="3366FF">
+
+
+<fieldset>
+<legend>SELECT THE RESPECTIVE CATEGORY</legend>
+RANK : <select id="rank" onchange="fun(this.value)">
+<option value="" selected></option>
+<optgroup label="RANK A">
+<option value="CEO">CEO</option>
+<option value="COO">COO</option>
+<option value="GM">GENERAL MANAGER</option>
+<option value="MANAGER">MANAGER</option>
+</optgroup>
+<optgroup label="RANK B">
+<option value="receptionist">Receptionist</option>
+<option value="clerk">Clerk</option>
+<option value="other">Other lower grade officer</option>
+</optgroup>
+</select>
+</fieldset>
+<br><br><br><br><br><br><br><br><br><br>
+
+<div align="center" id="div1" name="A" style="display:none">
+<h3>DETAILS OF RANK A OFFICER</h3>
+<table border="solid">
+<tr>
+    <td colspan="4" align="center"><b>EARNINGS</b></td>
+	<td colspan="3" align="center"><b>DEDUCTIONS</b></td>
+</tr>
+<tr>
+<th>BASIC PAY</th>
+<th>MEDIACL ALLOWANCE</th>
+<th>OVERTIME</th>
+<th>OVERTIME (HRS)</th>
+<th>PROVIDENT FUND</th>
+<th>PROFESSIONAL TAX</th>
+
+<th>LEAVES TAKEN</th>
+</tr>
+<tr>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.65000</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.3000</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.300/hr</td>
+<td><input type="text" id="over" name="val1"></td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.800</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.250</td>
+
+<td><input type="text" id="leaves" name="val2"></td>
+</tr>
+<tr>
+    <td colspan="7" align="center"><button type="submit" onclick="cal1()">SUBMIT HERE</button></td>
+</tr>
+
+</table>
+</div>
+
+
+
+<div align="center" id="div2" name="B" style="display:none">
+<h3>DETAILS OF RANK B OFFICER</h3>
+<table border="solid">
+<tr>
+    <td colspan="4" align="center"><b>EARNINGS</b></td>
+	<td colspan="3" align="center"><b>DEDUCTIONS</b></td>
+</tr>
+<tr>
+<th>BASIC PAY</th>
+<th>MEDIACL ALLOWANCE</th>
+<th>OVERTIME</th>
+<th>OVERTIME (HRS)</th>
+<th>PROVIDENT FUND</th>
+<th>PROFESSIONAL TAX</th>
+
+<th>LEAVES TAKEN</th>
+</tr>
+<tr>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.45000</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.2000</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.300/hr</td>
+<td><input type="text" id="over1" name="val3"></td>
+
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.500</td>
+<td onmouseover="change(this)" onmouseout="change1(this)">Rs.200</td>
+<td><input type="text" id="leaves1" name="val4"></td>
+</tr>
+<tr>
+    <td colspan="7" align="center"><button type="submit" onclick="cal2()">SUBMIT HERE</button></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+</html>

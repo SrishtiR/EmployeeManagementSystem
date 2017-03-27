@@ -1,0 +1,116 @@
+<html>
+<head>
+	<link href="stylenew.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <script>
+    function visible() {
+    if(document.getElementById("con2").style.visibility == "hidden" ) {
+    document.getElementById("con2").style.visibility = "visible";
+}
+else {
+document.getElementById("con2").style.visibility = "hidden";
+}
+	}
+    
+    
+    
+    
+    </script>
+    
+	
+</head>
+<body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+       <!-- <div class="z">
+          <button type="button" class="btn btn-navbar"  data-target=".nav-collapse">
+            <span class="icon-bar">Hello</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+        <div id = "mar">
+	<button onclick="visible()"><img src="admin.png"></img></button>
+	</div>
+         
+        </div>
+      </div>
+    </div>
+<div id= "con2">
+<form action = "check2.php" method ="post">
+<input type="text"  name="admin_id" value="username" onBlur="if(this.value=='')this.value='username'" onFocus="if(this.value=='username')this.value='' "> 
+        <input type="password" name="pass" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <br>
+        <input type="submit" name="submit" value="Login">
+        </form>
+</div>	
+
+
+<div class="image">
+<img src="emp.jpg">
+</div>
+<div class = "user_box">
+<div class="con">
+<br><br>
+
+<!--<div id="po">
+<button class = "search" onclick="visible()" style="background-color:#85ADFF"><img src="pro.jpg" height=60 width=50><figcaption><b>&nbspEmployee&nbsp</b></figcapion></img></button></div>-->
+  <div id="login-form">
+
+    <h3>Employee Login</h3>
+
+    <fieldset>
+
+      <form action="check.php" method="post">
+	  <div class = "user_reg">
+
+        <input type="text" required name="emp_id" value="username" onBlur="if(this.value=='')this.value='username'" onFocus="if(this.value=='username')this.value='' " > 
+        <input type="password" name="pass" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <br>
+        <input type="submit" name="submit" value="Login">
+	</div>
+        <footer class="clearfix">
+
+          <p><a href="reg_main.html">register here</a></p>
+
+        </footer>
+
+      </form>
+
+    </fieldset>
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+<!--  <div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">User Login</h2>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" id="text" class="form-control" required autofocus name="emp_id" value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' ">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required required name="pass" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' ">
+        
+        <button class="btn btn-lg btn-primary btn-block" name = "submit" type="submit">Login</button>
+        
+         <footer class="clearfix">
+
+          <p><a href="reg_main.html">register here</a></p>
+
+
+        </footer>
+      </form>
+
+    </div> <!-- /container -->
+
+<!--<div id="po">
+<button class = "search" onclick="visible()" style="background-color:#85ADFF"><img src="pro.jpg" height=60 width=50><figcaption><b>&nbspEmployee&nbsp</b></figcapion></img></button></div>-->
+ 
+
+</body>
+</html>
