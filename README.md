@@ -1,2 +1,2 @@
 # EmployeeManagementSystem
-This system allows the user to add, view, update and delete employee records from the database.
+Website to allow employees and admin to manage day-to-day activities such as salary calculation, leave management etc. 
